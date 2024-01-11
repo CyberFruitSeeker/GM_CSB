@@ -66,14 +66,6 @@ public:
             MsgBoxAssert("배열의 크기가 0일수 없습니다");
         }
 
-
-        int* Ptr = ArrPtr;
-        ArrPtr = new int[_Size];
-
-
-
-
-
         NumValue = _Size;
 
         if (nullptr != ArrPtr)
