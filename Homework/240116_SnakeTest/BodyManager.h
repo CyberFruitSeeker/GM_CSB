@@ -14,9 +14,9 @@ public:
 		CurBody = nullptr;
 	}
 
+
 	void Update() override;
 
 private:
 	static class Body* CurBody;
 };
-

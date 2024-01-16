@@ -17,6 +17,9 @@ void Head::Update()
 		return;
 	}
 
+
+
+
 	int Select = _getch();
 
 	// InputCount = _kbhit();
@@ -57,13 +60,13 @@ void Head::Update()
 
 	Body* CurBody = BodyManager::GetCurBody();
 
+	
+
+
 	if (CurBody->GetPos() == GetPos())
 	{
 		Back = CurBody;
 		BodyManager::ResetBody();
 	}
-	
-	
-
 
 }
