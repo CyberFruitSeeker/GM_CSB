@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1d979b24-de66-48ad-aeb1-704d236b5220}</ProjectGuid>
-    <RootNamespace>My240111RList</RootNamespace>
+    <ProjectGuid>{0e9d3221-7e8d-4f06-a491-29a41a836079}</ProjectGuid>
+    <RootNamespace>My240116SnakeTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="240111_RList.cpp" />
+    <ProjectReference Include="C:\Users\assortrock0\CPA_Assignment\CPA_Assignment\ConsoleEngine\ConsoleEngine.vcxproj">
+      <Project>{16f2cc42-26e3-4631-999d-b76d95cb7ab7}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
