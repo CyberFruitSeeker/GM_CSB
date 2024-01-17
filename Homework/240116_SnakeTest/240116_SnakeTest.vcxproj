@@ -18,30 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\assortrock0\CPA_Assignment\CPA_Assignment\ConsoleEngine\ConsoleEngine.vcxproj">
-      <Project>{16f2cc42-26e3-4631-999d-b76d95cb7ab7}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Body.h" />
-    <ClInclude Include="BodyManager.h" />
-    <ClInclude Include="GlobalValue.h" />
-    <ClInclude Include="Head.h" />
-    <ClInclude Include="Part.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Body.cpp" />
-    <ClCompile Include="BodyManager.cpp" />
-    <ClCompile Include="GlobalValue.cpp" />
-    <ClCompile Include="Head.cpp" />
-    <ClCompile Include="Part.cpp" />
-    <ClCompile Include="SnakeGame.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{478ddeae-0bc7-448b-97a1-4c6f2f8087fc}</ProjectGuid>
+    <ProjectGuid>{6eca4479-b1e5-491c-ba76-8951f1ad575b}</ProjectGuid>
     <RootNamespace>My240116SnakeTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -162,6 +142,26 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleEngine\ConsoleEngine.vcxproj">
+      <Project>{16f2cc42-26e3-4631-999d-b76d95cb7ab7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="BodyManager.h" />
+    <ClInclude Include="GlobalValue.h" />
+    <ClInclude Include="Head.h" />
+    <ClInclude Include="Part.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="BodyManager.cpp" />
+    <ClCompile Include="GlobalValue.cpp" />
+    <ClCompile Include="Head.cpp" />
+    <ClCompile Include="Part.cpp" />
+    <ClCompile Include="SnakeGame.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

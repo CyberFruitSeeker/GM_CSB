@@ -17,15 +17,16 @@ void Head::Update()
 		return;
 	}
 
-
-
-
 	int Select = _getch();
 
-	// InputCount = _kbhit();
 
-	// X Y
-	// 1 0
+	// 0123
+	//0@@**
+	//1****
+	//2****
+	//3****
+
+	int2 Pos = GetPos();
 
 	switch (Select)
 	{
@@ -58,15 +59,33 @@ void Head::Update()
 		return;
 	}
 
+	if (nullptr != Back)
+	{
+		Back->SetPos(Pos);
+	}
+
 	Body* CurBody = BodyManager::GetCurBody();
-
-	
-
 
 	if (CurBody->GetPos() == GetPos())
 	{
+		// 여기 내부가 머리야
+		// this => head
+		// head Body
+
 		Back = CurBody;
+
+		// 헤드의 전위치
+		Back->SetPos(Pos);
+
+		// 주소값을 알고있고, 그걸 저장하고 있으니
+		// 필요한 것은... 
+
 		BodyManager::ResetBody();
 	}
+
+
+
+
+
 
 }
