@@ -19,4 +19,3 @@ public:
 private:
 	static class Body* CurBody;
 };
-
